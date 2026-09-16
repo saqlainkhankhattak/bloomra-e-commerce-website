@@ -141,8 +141,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 50px 8%;
+  transition: 1s ease-in-out;
   opacity: 0;
-
 }
 .slideContent {
   width: 48%;
