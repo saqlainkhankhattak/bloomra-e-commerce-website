@@ -1,37 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <nav>
-   <div id="logo"><img src="./logo.png" alt=""></div>
-   <ul class="navLinks">
-    <li><a href="#">Home</a></li>
-     <li><a href="#">Shop</a></li>
-      <li><a href="#">Categories</a></li>
-       <li><a href="#">About</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloomora | Online Flower Shop</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="logo"><img src="./logo.png" alt="" /></div>
+      <ul class="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
-   </ul>
-   <div class="srchBtns">
-    <div class="searchBox">
-    <span style="font-size: 16px;" class="searchIcon">🔎</span>
+      </ul>
+      <div class="srchBtns">
+        <div class="searchBox">
+          <span style="font-size: 16px" class="searchIcon">🔎</span>
 
-    <input id ="srchInput" type="text" placeholder="Search flowers...">
-</div>
-    <div id="cart">
-      🛒
-    </div>
-    <button class="bttn">Shop Now</button>
-    <div id="menuBtn">☰</div>
+          <input id="srchInput" type="text" placeholder="Search flowers..." />
+        </div>
+        <div id="cart">🛒</div>
+        <button class="bttn">Shop Now</button>
+        <div id="menuBtn">☰</div>
+      </div>
+    </nav>
+    <section class="heroSlider">
+      <div class="slide slide-active">
+        <div class="slideContent">
+          <p>FRESH FLOWERS, FRESH FEELINGS</p>
 
-   </div>
+          <h1>
+            Let Your Love
+            <span>Bloom</span>
+          </h1>
 
+          <h3>
+            Express your feelings with beautiful fresh roses, carefully selected
+            to make every moment special.
+          </h3>
 
-  </nav>
-  <script src="./script.js"></script>
-</body>
+          <button>Shop Now</button>
+        </div>
+        <div class="slideImage">
+          <img src="./bouquet.jpeg" alt="" />
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slideContent">
+          <p>HANDPICKED WITH LOVE</p>
+
+          <h1>
+            Make Every
+            <span>Moment Beautiful</span>
+          </h1>
+
+          <h3>
+            Thoughtfully arranged bouquets made to express love, gratitude and
+            unforgettable emotions.
+          </h3>
+
+          <button>Shop Now</button>
+        </div>
+        <div class="slideImage">
+          <img src="./sunflowers.jpeg" alt="" />
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slideContent">
+          <p>A LITTLE SUNSHINE FOR YOU</p>
+
+          <h1>
+            Brighten Your
+            <span>Everyday Moments</span>
+          </h1>
+
+          <h3>
+            Fresh and cheerful blooms that bring warmth, happiness and a little
+            sunshine to every day.
+          </h3>
+
+          <button>Shop Now</button>
+        </div>
+        <div class="slideImage">
+          <img src="./roses.jpg" alt="" />
+        </div>
+      </div>
+      <button class="slider-btn prev-btn">⬅</button>
+      <button class="slider-btn next-btn">➡</button>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
 </html>

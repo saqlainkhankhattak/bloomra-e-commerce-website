@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
   
 }
 
@@ -12,6 +13,7 @@ body {
   width: 100%;
 }
 nav {
+    width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,7 +34,7 @@ nav {
 }
 .navLinks {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   font-size: 16px;
 }
 .navLinks a {
@@ -95,6 +97,11 @@ nav {
   .navLinks {
     display: none;
   }
+}
+  @media (max-width: 960px) {
+  .navLinks {
+    gap: 10px;
+  }
 .navLinks.active {
     display: flex;
     gap: 15px;
@@ -115,4 +122,124 @@ nav {
   .searchBox {
     display: none;
   }
+}
+
+/* slider  */
+.heroSlider {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background: #fff8f3;
+}
+
+.slide {
+  position: absolute;
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 8%;
+  opacity: 0;
+
+}
+.slideContent {
+  width: 48%;
+}
+.slideContent p {
+  color: #d96c86;
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.slideContent h1 {
+  color: #2b2525;
+  font-size: 4rem;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+.slideContent h1 span {
+  display: block;
+  color: #d96c86;
+  font-style: italic;
+}
+
+.slideContent h3 {
+  max-width: 500px;
+  color: #766d6d;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+.slideContent button {
+  padding: 13px 30px;
+  border: none;
+  border-radius: 50px;
+  background: #e88a9b;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.slideContent button:hover {
+  background: #d96c86;
+}
+
+.slideImage {
+    width: 43%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 220px 220px 30px 30px;
+    box-shadow: 0 20px 40px rgba(60, 30, 40, 0.15);
+}
+.slider-btn {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 48px;
+    height: 48px;
+
+    border: 1px solid #e2c6cc;
+    border-radius: 50%;
+
+    background: white;
+    color: #d96c86;
+
+    font-size: 20px;
+
+    cursor: pointer;
+    z-index: 5;
+
+    transition: 0.3s ease;
+}
+
+.slider-btn:hover {
+    background: #d96c86;
+    color: white;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn {
+    left: 25px;
+}
+
+.next-btn {
+    right: 25px;
+}
+
+.slide.slide-active {
+  opacity: 1;
 }
